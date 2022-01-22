@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        /* Experimental Options */
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        /* Advanced Options */
+        "forceConsistentCasingInFileNames": true,
+        "module": "commonjs",
+        "target": "ES6",
+        "rootDir": "./",
+        "allowJs": true,
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "types": [
+            "node"
+        ]
+    }
+}
