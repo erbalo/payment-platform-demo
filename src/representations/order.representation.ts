@@ -1,10 +1,10 @@
 export interface OrderRepresentation {
-    id: number
-    items: OrderItemRepresentation[]
+    id: number;
+    items: OrderItemRepresentation[];
 }
 
 export interface OrderItemRepresentation {
-    id: number
-    quantity: number
-    price: number
+    id: number;
+    quantity: number;
+    price: number;
 }

@@ -1,7 +1,7 @@
-import { AdapterFactory } from "./adapter.factory";
-import { GenericAdapter } from "./generic.adapter";
-import { PaypalAdapter } from "./paypal/paypal.adapter";
-import { PaypalGatewayProxy } from "./paypal/paypal.gateway.proxy";
+import { AdapterFactory } from './adapter.factory';
+import { GenericAdapter } from './generic.adapter';
+import { PaypalAdapter } from './paypal/paypal.adapter';
+import { PaypalGatewayProxy } from './paypal/paypal.gateway.proxy';
 
 const genericAdapter = new GenericAdapter();
 const paypalProxy = new PaypalGatewayProxy();

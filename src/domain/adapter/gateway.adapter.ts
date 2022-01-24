@@ -1,16 +1,12 @@
-import { PaymentRequest } from "../../representations/request/payment.request";
-import { GatewayProxy } from "../gateway.proxy";
-import { PaymentRequestReady } from "../payment.request.ready";
-import { ProxyTransaction } from "../proxy.transaction";
-import { GenericAdapter } from "./generic.adapter";
-import { PaymentAdapter } from "./payment.adapter";
+import { PaymentRequest } from '../../representations/request/payment.request';
+import { GatewayProxy } from '../gateway.proxy';
+import { PaymentRequestReady } from '../payment.request.ready';
+import { ProxyTransaction } from '../proxy.transaction';
+import { GenericAdapter } from './generic.adapter';
+import { PaymentAdapter } from './payment.adapter';
 
 export abstract class GatewayAdapter extends PaymentAdapter {
-
-    protected constructor(
-        private generic: GenericAdapter,
-        private gatewayProxy: GatewayProxy
-    ) {
+    protected constructor(private generic: GenericAdapter, private gatewayProxy: GatewayProxy) {
         super(generic, gatewayProxy);
     }
 
@@ -21,5 +17,4 @@ export abstract class GatewayAdapter extends PaymentAdapter {
     pay(paymentReady: PaymentRequestReady): ProxyTransaction {
         return this.generic.payOn(this.gatewayProxy).pay(paymentReady);
     }
-
 }

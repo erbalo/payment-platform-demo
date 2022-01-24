@@ -1,5 +1,5 @@
-import { Gateway } from "./gateway"
-import adapterFactory from './adapter'
+import { Gateway } from './gateway';
+import adapterFactory from './adapter';
 
 let gateway = null;
 
