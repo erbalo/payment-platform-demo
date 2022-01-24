@@ -1,8 +1,8 @@
-import { ProxyComponent } from "./proxy.component";
+import { ProxyComponent } from './proxy.component';
 
 export interface ProxyTransaction {
-    orderId: number
-    amount: number
-    proxy: ProxyComponent
-    reference: string
+    orderId: number;
+    amount: number;
+    proxy: ProxyComponent;
+    reference: string;
 }

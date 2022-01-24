@@ -7,12 +7,25 @@
         "forceConsistentCasingInFileNames": true,
         "module": "commonjs",
         "target": "ES6",
-        "rootDir": "./",
+        "outDir": "build",
+        "rootDirs": ["./src", "./resources"],
         "allowJs": true,
         "esModuleInterop": true,
+        "sourceMap": true,
+        "declaration": true,
+        "allowSyntheticDefaultImports": true,
+        "resolveJsonModule": true,
         "moduleResolution": "node",
         "types": [
             "node"
         ]
-    }
+    },
+    "include": [
+        "./src",
+        "./resources/**/*.json"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/__tests__/*"
+    ]
 }

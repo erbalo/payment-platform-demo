@@ -1,6 +1,6 @@
-import { Channel, Connection } from "amqplib";
+import { Channel, Connection } from 'amqplib';
 
 export interface RabbitConnection {
-    connection: Connection
-    channel: Channel
+    connection: Connection;
+    channel: Channel;
 }

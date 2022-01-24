@@ -1,5 +1,5 @@
-import { TransactionRepository } from "../repository/transaction.repository";
+import { TransactionRepository } from '../repository/transaction.repository';
 
 export interface RepositoryLoader {
-    transactionRepository: TransactionRepository
+    transactionRepository: TransactionRepository;
 }

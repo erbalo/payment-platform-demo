@@ -1,7 +1,7 @@
-import { ProxyComponent } from "../../domain/proxy.component";
-import { OrderRepresentation } from "../order.representation";
+import { ProxyComponent } from '../../domain/proxy.component';
+import { OrderRepresentation } from '../order.representation';
 
 export interface PaymentRequest {
-    proxy: ProxyComponent
-    order: OrderRepresentation
+    proxy: ProxyComponent;
+    order: OrderRepresentation;
 }

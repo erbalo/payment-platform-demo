@@ -1,6 +1,6 @@
-import { ConfigurationHandler } from "./configuration.handler";
+import { ConfigurationHandler } from './configuration.handler';
 
-const configurationHandler = new ConfigurationHandler()
-const configurationLoaders = configurationHandler.loaders()
+const configurationHandler = new ConfigurationHandler();
+const configurationLoaders = configurationHandler.loaders();
 
 export default configurationLoaders;
